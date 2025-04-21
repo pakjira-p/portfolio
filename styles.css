@@ -11,7 +11,8 @@ hr{
 }
 
 .container{
-  padding: 4rem 0rem;
+  padding: 0;
+  margin-top: 0;
 }
 
 .nav-item:focus, 
@@ -59,7 +60,6 @@ hr{
   background-color: #121212; /* สีเข้มสำหรับพื้นหลัง */
   padding: 4rem 0;
   border-bottom: 2px solid #333; /* เส้นขอบแบ่งแต่ละ section */
-  min-height: 80vh;
 }
 
 #projects{
@@ -68,9 +68,17 @@ hr{
   border-bottom: 2px solid #333; /* เส้นขอบแบ่งแต่ละ section */
 }
 
-.custom-hero {
+#about, #technologies, #projects, #contact{
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#hero {
   /* padding: 10rem 0rem !important; */
-  height: 65vh;
+  height: 75vh !important;
   width: 100vw;
   display: flex;
   flex-direction: column;
