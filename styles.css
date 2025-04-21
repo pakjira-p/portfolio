@@ -6,6 +6,10 @@ body{
   font-style: normal;
 }
 
+hr{
+  margin: 0;
+}
+
 .container{
   padding: 4rem 0rem;
 }
@@ -200,6 +204,7 @@ body{
   color: #000000;
   border-color: #000000;
   text-decoration: none;
+  margin-bottom: 10px;
 }
 
 .custom-btn-tech:hover {
