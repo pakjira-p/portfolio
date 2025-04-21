@@ -157,10 +157,6 @@ hr{
   justify-content: space-between; /* จัดเนื้อหากับปุ่มให้กระจาย */
 }
 
-#projects .card {
-  min-height: 90vh; /* กำหนดความสูงขั้นต่ำของการ์ด */
-}
-
 .card-title {
   color: #eee;
   text-align: center;
@@ -177,6 +173,10 @@ hr{
 .card-text {
   flex-grow: 1; /* ให้เนื้อหาขยายพื้นที่หากจำเป็น */
   padding: 1rem 0.5rem;
+}
+
+.card-text strong {
+  color: #eee;
 }
 
 .tech-name {
