@@ -5,7 +5,7 @@ This repository contains my personal Software Testing Portfolio, showcasing prac
 [See Portfolio](https://pakjira-p.github.io/portfolio-softwaretester/)
 
 ## To collaborate with me or to hire me, please contact me at:
-[Email: pakjira.phr@gmail.com](mailto:pakjira.phr@gmail.com)
+[Email: pakjira.phr@gmail.com](mailto:pakjira.phr@gmail.com)  
 [LinkedIn](https://www.linkedin.com/in/pakjira/)
 
 🚧 This portfolio is currently under development. Some parts may be incomplete or subject to change.
