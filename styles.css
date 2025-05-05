@@ -1,6 +1,15 @@
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
 body{
   background-color:#1B1B1B;/* For browsers that do not support gradients */
-  background-image: linear-gradient(#1B1B1B,#003153,#1B1B1B);
+  background-image: linear-gradient(#1B1B1B 10%,#003153 50%,#1B1B1B 90%);
   color: #FFFFFF;
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
