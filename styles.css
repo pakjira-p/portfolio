@@ -1,0 +1,325 @@
+body{
+  background-color:#1B1B1B;/* For browsers that do not support gradients */
+  background-image: linear-gradient(#1B1B1B,#003153,#1B1B1B);
+  color: #FFFFFF;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+hr{
+  margin: 0;
+}
+
+.container{
+  padding: 0;
+  margin-top: 0;
+}
+
+.nav-item:focus, 
+.nav-item:hover {
+  font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+  color: #ffffff;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #FFC200;
+}
+
+
+.navbar {
+  position: relative;
+}
+
+.navbar-collapse {
+  position: relative;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 999999;
+  will-change: transform;
+  transition: transform 200ms linear;
+  
+}
+
+#hero{
+  padding: 4rem 0;
+  height: 75vh !important;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#about{
+  border-top-left-radius: 45px;
+  border-top-right-radius: 45px;
+  border-top: 2px solid #333; /* เส้นขอบแบ่งแต่ละ section */
+  padding: 4rem 0;
+}
+
+#about, #technologies, #projects {
+  background-color: #121212; /* สีเข้มสำหรับพื้นหลัง */
+  padding: 4rem 0;
+  border-bottom: 2px solid #333; /* เส้นขอบแบ่งแต่ละ section */
+}
+
+#projects{
+  border-bottom-left-radius: 45px;
+  border-bottom-right-radius: 45px;
+  border-bottom: 2px solid #333; /* เส้นขอบแบ่งแต่ละ section */
+}
+
+#about, #technologies, #projects, #contact{
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn {
+  border-radius: 50px;
+  padding: 13px 50px;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: normal;
+  overflow: hidden;
+  display: inline-block;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+
+.btn:hover, .btn-contact:hover{
+  transform: scale(1.2); /* ขยายปุ่มให้ใหญ่ขึ้นเมื่อ hover */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* เพิ่มเงาให้ดูเด่น */
+}
+
+.btn-contact{
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+  color: #eee;
+}
+
+#btn-container{
+  display: flex; /* ใช้ Flexbox เพื่อจัดเรียงปุ่มในแนวนอน */
+  justify-content: center; /* จัดปุ่มให้อยู่กลาง */
+  gap: 15px; /* ระยะห่างระหว่างปุ่ม */
+}
+
+
+.head-icon{
+  color:#FFC200;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* จัดตำแหน่งให้อยู่กลาง */
+  justify-content: center;
+  text-align: center;
+  /* font-size: 50px; */
+}
+
+.custom-btn-primary {
+  background: #474559;
+  color: #ffffff;
+}
+
+.custom-btn-primary:hover {
+  background-color:#FFC200;
+  color: #000000;
+}
+
+.custom-btn-secondary {
+  background: #eee;
+  color: #5b5b5b;
+}
+
+.custom-btn-secondary:hover {
+  background-color:#000000;
+  color: #FFC200;
+}
+
+.highlight {
+  color: #FFC200;
+}
+
+.card {
+  background-color: #1A1A1A;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* จัดเนื้อหากับปุ่มให้กระจาย */
+}
+
+.card-title {
+  color: #eee;
+  text-align: center;
+  font-weight: bold;
+  padding: 1rem 0.5rem;
+}
+
+.card-subtitle {
+  color: #eee;
+  padding-top: 1rem;
+  font-weight: bold;
+}
+
+.card-text {
+  flex-grow: 1; /* ให้เนื้อหาขยายพื้นที่หากจำเป็น */
+  padding: 1rem 0.5rem;
+}
+
+.card-text strong {
+  color: #eee;
+}
+
+.tech-name {
+  background-color: #000000;
+  border-radius: 50px;
+  padding: 5px 10px;
+  font-weight: bold;
+  line-height: normal;
+  overflow: hidden;
+  display: inline-block;
+  text-align: center;
+}
+
+.custom-btn-tech {
+  border-radius: 50px;
+  padding: 8px 33px;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: normal;
+  overflow: hidden;
+  display: inline-block;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #FFC200;
+  color: #000000;
+  border-color: #000000;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
+.custom-btn-tech:hover {
+  background-color: #000000;
+  color: #FFC200;
+}
+
+/* ปรับตำแหน่งของปุ่มให้ชิดขวา */
+.custom-btn-tech-container {
+  margin-top: auto; /* ทำให้ปุ่มไปอยู่ที่ขอบล่าง */
+  text-align: end; /* ปรับให้ปุ่มอยู่กลาง */
+}
+
+.tech-name {
+  background-color: #000000;
+  border-radius: 50px;
+  padding: 5px 10px;
+  font-weight: bold;
+  line-height: normal;
+  overflow: hidden;
+  display: inline-block;
+  text-align: center;
+}
+
+footer{
+  background-color:#1B1B1B;
+  color: #5b5b5b;
+  border-top: 1px solid #333; 
+}
+
+#backToTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #474559;;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  display: none; /* ซ่อนปุ่มจนกว่าจะเลื่อนหน้าจอลงมา */
+  cursor: pointer;
+}
+
+#backToTop:hover {
+  background-color: #FFC200;
+  color:#000000
+}
+
+
+@media (min-width: 1270px) {
+  .btn {
+    padding: 13px 50px;
+    font-size: 18px;
+  }
+
+}
+
+@media (max-width: 991px) {
+  .btn {
+    padding: 12px 35px;
+    font-size: 14px;
+  }
+  .navbar-expand-sm .navbar-nav .nav-link {
+    padding: 3px 20px;
+  }
+  .full-screen {
+    padding-bottom: 4rem;
+  }
+  .navbar-collapse {
+    position: absolute; 
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #000000 !important;
+    text-align: center;
+    z-index: 9999;
+    padding: 1.5rem;
+    transition: all 0.3s ease-in-out;
+    border-bottom: 1px solid #333; 
+  }
+}
+
+@media (max-width: 767px) {
+  .btn {
+    padding: 10px 30px;
+    font-size: 14px;
+  }
+  .custom-btn-group {
+    text-align: center;
+  }
+  .custom-btn {
+    display: block;
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 580px) {
+  .btn {
+    padding: 10px 25px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 320px) {
+  .btn {
+    padding: 8px 20px;
+    font-size: 12px;
+  }
+  .full-screen {
+    padding: 4rem 0;
+  }
+}
+
