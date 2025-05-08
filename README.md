@@ -4,8 +4,6 @@ This repository contains my personal Software Testing Portfolio, showcasing prac
 ## Portfolio Website
 [See Portfolio](https://pakjira-p.github.io/portfolio/)
 
-
-
 ![Screenshot 2025-05-05 213015](https://github.com/user-attachments/assets/278402d6-c3ba-4ad8-86ef-5a91dc63ce88)
 
 
